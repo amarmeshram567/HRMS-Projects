@@ -6,6 +6,7 @@ const empRouter = express.Router()
 
 
 empRouter.use(authMiddleware);
+
 empRouter.get("/", list);
 empRouter.get("/:id", get);
 empRouter.post("/", create);
